@@ -56,3 +56,20 @@ e root**pwr uguale all’intero inserito dall’utente. Se non esiste una coppia
 stampare un messaggio che lo segnali.
 """
 
+n=int(input("Inserisci intero: "))
+found=False
+
+for pwr in range(2,6):
+    for root in range(1,n): #metto il limite ad n poichè non avrebbe senso avere uan base più grande di n
+        guess=root**pwr
+        if guess==n:
+            found=True
+            print("Ho trovato le coppie: ", (root,pwr))
+            break;
+    if found:
+        break
+
+if(found==False):
+    print("Non abbiamo trovato le coppie")
+
+# %%
