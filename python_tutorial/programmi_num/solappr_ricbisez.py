@@ -32,6 +32,7 @@ if abs(ans**2 - x) >= epsilon:
 else:
     print(ans, 'è vicino alla radice quadrata di', x)
 # In[]
+#ricerca per bisezione: metodo per approssimazioni successive
 x=int(input("Inserisci un intero: "))
 if x<0:
     x=abs(x)
