@@ -137,6 +137,26 @@ print('L2 =', L2, 'L3 =', L3)
 L3.append("fra")
 print('L2 =', L2, 'L3 =', L3)
 
+# In[]
 
+#comprensione liste
+#[espressione for elemento in iterabile if test]
 
+#generazione numeri non primi tra 2 e 100
+L=[i for i in range(2, 100, 2) if (i % j == 0 for j in range(2, int(i**0.5)+1, 2))]
+print(L)
+
+# In[]
+
+def f(L1, L2):
+    if len(L1)!=len(L2):
+        return -1
+    somma=0
+    i=0
+    while i<len(L1):
+        somma+=L1[i]**L2[i]
+        i+=1
+    return somma
+
+print(f([1,2], [2,3]))
 # %%
